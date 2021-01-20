@@ -1,9 +1,7 @@
 pipeline {
   agent any
 
-  tools {
-    maven "M3"
-  }
+  tool name: 'Maven', type: 'maven'
 
   stages {
     stage ("initialize") {
